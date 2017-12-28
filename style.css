@@ -1,0 +1,28 @@
+div.jumbotron{
+  background-color: dimgray;
+}
+
+.item_holder .panel.panel-default{
+  height: 180px;
+  width: 260px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.item_holder .panel.panel-default .panel-heading{
+  background-color: #2984ec;
+  height: 50px;
+}
+
+.total_holder .panel.panel-default {
+  height: 180px;
+  width: 260px;
+  margin: auto;
+  margin-bottom: 20px;
+} 
+
+.total_holder .panel.panel-default .panel-heading{
+  height: 50px;
+  background-color:#ec6f16;
+  text-align: center
+}
