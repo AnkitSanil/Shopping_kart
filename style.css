@@ -2,11 +2,36 @@ div.jumbotron{
   background-color: dimgray;
 }
 
+
+/* ****************************
+********ROW DETAILS************
+******************************* */
+
+div.row{
+/*  
+border: 2px solid #c0c6c6; */
+}
+
+/* .total-checkout-holder{
+  position: fixed;
+  top:45%;
+} */
+/* .total_holder{
+  position: fixed;
+  top:45%;
+} */
+
 .item_holder .panel.panel-default{
   height: 180px;
   width: 260px;
   margin: auto;
   margin-bottom: 20px;
+  
+}
+.item_holder .panel.panel-default .panel-body{
+   background-color: #a6ccf7;
+   height: 128px;
+
 }
 
 .item_holder .panel.panel-default .panel-heading{
@@ -25,4 +50,45 @@ div.jumbotron{
   height: 50px;
   background-color:#ec6f16;
   text-align: center
+}
+.total_holder .panel.panel-default .panel-body{
+  background-color: #fadac3;
+  height: 128px;
+}
+
+div button.btn.btn-primary.btn-lg{
+   background-color: #5fa605;
+   border: none;
+   
+}
+.checkout{
+  text-align: center;
+  border: none;
+}
+i.fa.fa-shopping-cart{
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+/* ****************************
+********CHECKOUT PAGE**********
+******************************* */
+
+
+.well{
+  background-color: #af98a5;
+  
+  text-align: center;
+
+}
+
+.well tr.total-calc{
+   font-size: 15px;
+   /* font-style: initial; */
+   font-weight: 700;
+}
+
+div a#custom{
+  
+ background-color: #5fa605;
 }

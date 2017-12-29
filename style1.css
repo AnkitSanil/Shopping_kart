@@ -1,0 +1,17 @@
+.well{
+    background-color: #af98a5;
+    
+    text-align: center;
+ 
+ }
+ 
+ .well tr.total-calc{
+     font-size: 15px;
+     /* font-style: initial; */
+     font-weight: 700;
+ }
+
+ div a#custom{
+    
+   background-color: #5fa605;
+ }
