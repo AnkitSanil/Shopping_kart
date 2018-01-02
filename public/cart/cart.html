@@ -1,13 +1,17 @@
-<div class="container">
+<div class="container" ng-controller="CartCtrl">
     <div class="jumbotron">
         <h1 style="text-align: center">SHOPPING CART</h1>
      </div>
      <div class="row">
           <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
                <div class="item_holder">
-                   <div class="panel panel-default">
-                       <div class="panel-heading">Panel title</div>
-                       <div class="panel-body">
+                   <div class="panel panel-default" ng-repeat="q in shopData">
+                       <div class="panel-heading">
+                           <h3 class="panel-title">{{q.item}}</h3>
+
+                        </div>
+                        <check-list option="q.prices" name="q.id" selected="q.selected"></check-list>
+                       <!-- <div class="panel-body">
                           <div class="radio">
                               <label>
                                   <input type="radio" name="optradio">Option 1
@@ -23,48 +27,9 @@
                                    <input type="radio" name="optradio">Option 3
                               </label>
                             </div>
-                       </div>
+                       </div> -->
                    </div>
-                   <div class="panel panel-default">
-                          <div class="panel-heading">Panel title</div>
-                          <div class="panel-body">
-                                  <div class="radio">
-                                          <label>
-                                              <input type="radio" name="optradio">Option 1
-                                          </label>
-                                      </div>
-                                      <div class="radio">
-                                          <label>
-                                               <input type="radio" name="optradio">Option 2
-                                           </label>
-                                       </div>
-                                       <div class="radio">
-                                          <label>
-                                               <input type="radio" name="optradio">Option 3
-                                          </label>
-                                        </div>
-                       </div>
-                   </div>
-                   <div class="panel panel-default">
-                           <div class="panel-heading">Panel title</div>
-                           <div class="panel-body">
-                                  <div class="radio">
-                                          <label>
-                                              <input type="radio" name="optradio">Option 1
-                                          </label>
-                                      </div>
-                                      <div class="radio">
-                                          <label>
-                                               <input type="radio" name="optradio">Option 2
-                                           </label>
-                                       </div>
-                                       <div class="radio">
-                                          <label>
-                                               <input type="radio" name="optradio">Option 3
-                                          </label>
-                                        </div>
-                        </div>
-                    </div>
+                   
                </div>
           </div>
           <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
@@ -73,12 +38,12 @@
                   <div class="panel panel-default">
                       <div class="panel-heading" >Total concent</div>
                       <div class="panel-body">
-                          <h1>Rs. 100</h1>
+                          <h1>{{total()}}</h1>
                       </div>
                   </div>
               </div>
               <div class="checkout">
-                  <button type="button"  class="btn btn-primary btn-lg" >Check Out <i class="fa fa-shopping-cart" aria-hidden="true" style="font-sze: "></i></button>
+                  <button type="button"  class="btn btn-primary btn-lg" >Check Out <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
               </div>
             </div>
           

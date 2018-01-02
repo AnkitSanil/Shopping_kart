@@ -11,7 +11,7 @@ var app = express();
 app.use('/public',express.static(__dirname + '/public'));  
 
 // app.use is again used to assign a path __dirname
-// app.use('/style',express.static(__dirname ));
+app.use('/style',express.static(__dirname ));
 
 
 app.use('/node_modules',express.static(__dirname+ '/node_modules'));
